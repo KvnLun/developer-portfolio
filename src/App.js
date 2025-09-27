@@ -264,9 +264,13 @@ const Portfolio = () => {
           style={{ transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)` }}
         >
           <div className="mb-6 inline-block">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 p-1 animate-pulse">
+            <div className="w-64 h-64 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 p-1 animate-pulse">
               <div className={`w-full h-full rounded-full ${darkMode ? 'bg-gray-900' : 'bg-white'} flex items-center justify-center`}>
-                <Terminal className="w-16 h-16 text-purple-500" />
+                    <img 
+                        src="/pp.jpg"  // ← Add your image file to public folder
+                        alt="Kevin Loun"
+                        className="w-full h-full rounded-full object-cover"
+                   />
               </div>
             </div>
           </div>
@@ -295,13 +299,13 @@ const Portfolio = () => {
           </div>
           
           <div className="flex justify-center space-x-6">
-            <a href="#" className={`p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-200 hover:bg-gray-300'} transform hover:scale-110 transition-all duration-300`}>
+            <a href="https://github.com/KvnLun" className={`p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-200 hover:bg-gray-300'} transform hover:scale-110 transition-all duration-300`}>
               <Github className="w-6 h-6" />
             </a>
-            <a href="#" className={`p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-200 hover:bg-gray-300'} transform hover:scale-110 transition-all duration-300`}>
+            <a href="https://www.linkedin.com/in/kevin-loun/" className={`p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-200 hover:bg-gray-300'} transform hover:scale-110 transition-all duration-300`}>
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="#" className={`p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-200 hover:bg-gray-300'} transform hover:scale-110 transition-all duration-300`}>
+            <a href="mailto:kvn.loun@gmail.com" className={`p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-200 hover:bg-gray-300'} transform hover:scale-110 transition-all duration-300`}>
               <Mail className="w-6 h-6" />
             </a>
           </div>
