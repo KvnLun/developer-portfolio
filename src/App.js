@@ -264,13 +264,9 @@ const Portfolio = () => {
           style={{ transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)` }}
         >
           <div className="mb-6 inline-block">
-            <div className="w-64 h-64 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 p-1 animate-pulse">
+            <div className="w-32 h-32 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 p-1 animate-pulse">
               <div className={`w-full h-full rounded-full ${darkMode ? 'bg-gray-900' : 'bg-white'} flex items-center justify-center`}>
-                    <img 
-                        src="/pp.jpg"  // ← Add your image file to public folder
-                        alt="Kevin Loun"
-                        className="w-full h-full rounded-full object-cover"
-                   />
+                    <Terminal className="w-16 h-16 text-purple-500" />
               </div>
             </div>
           </div>
