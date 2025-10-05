@@ -88,59 +88,17 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'E-Commerce Microservices',
-      description: 'Scalable e-commerce platform built with microservices architecture handling 100k+ daily users.',
-      tech: ['Node.js', 'Docker', 'Kubernetes', 'Redis', 'MongoDB'],
+      title: 'Calculator API',
+      description: 'Simple RestAPI Calculator App that was created to practice and learn standard API skills and interactions',
+      tech: ['Java', 'RestAPI','SpringBoot', 'Maven', 'JUnit 5'],
       category: 'backend',
       image: 'https://via.placeholder.com/400x300/059669/ffffff?text=E-Commerce',
-      github: '#',
+      github: 'https://github.com/KvnLun/calculator/tree/main',
       live: '#',
       featured: true
     },
-    {
-      id: 3,
-      title: 'Social Media Mobile App',
-      description: 'Cross-platform social networking app with real-time messaging and video sharing.',
-      tech: ['React Native', 'Firebase', 'WebRTC', 'Redux'],
-      category: 'mobile',
-      image: 'https://via.placeholder.com/400x300/dc2626/ffffff?text=Social+App',
-      github: '#',
-      live: '#',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Blockchain Supply Chain',
-      description: 'Decentralized supply chain tracking system ensuring transparency and authenticity.',
-      tech: ['Solidity', 'Web3.js', 'Next.js', 'IPFS'],
-      category: 'blockchain',
-      image: 'https://via.placeholder.com/400x300/7c3aed/ffffff?text=Blockchain',
-      github: '#',
-      live: '#',
-      featured: true
-    },
-    {
-      id: 5,
-      title: 'Health Monitoring IoT Platform',
-      description: 'IoT platform for real-time health monitoring with predictive analytics.',
-      tech: ['Python', 'MQTT', 'React', 'TensorFlow', 'AWS IoT'],
-      category: 'fullstack',
-      image: 'https://via.placeholder.com/400x300/0891b2/ffffff?text=IoT+Health',
-      github: '#',
-      live: '#',
-      featured: false
-    },
-    {
-      id: 6,
-      title: 'Video Streaming Service',
-      description: 'Netflix-clone with adaptive bitrate streaming and recommendation engine.',
-      tech: ['Next.js', 'FFmpeg', 'Redis', 'Elasticsearch'],
-      category: 'fullstack',
-      image: 'https://via.placeholder.com/400x300/b91c1c/ffffff?text=Streaming',
-      github: '#',
-      live: '#',
-      featured: true
-    }
+    
+
   ];
 
   const experience = [
@@ -404,7 +362,7 @@ const Portfolio = () => {
           </h2>
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {['all', 'fullstack', 'backend', 'mobile', 'blockchain'].map(filter => (
+            {['all', 'backend'].map(filter => (
               <button
                 key={filter}
                 onClick={() => setProjectFilter(filter)}
