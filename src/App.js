@@ -410,7 +410,7 @@ const Portfolio = () => {
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <a
-              href="#"
+              href="/Resume.pdf"
               className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               <Download className="w-5 h-5" />
