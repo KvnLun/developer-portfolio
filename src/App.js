@@ -27,6 +27,7 @@ import {
   Download,
   ArrowRight,
   Sparkles,
+  Origami,
 } from "lucide-react";
 
 const Portfolio = () => {
@@ -390,13 +391,13 @@ const Portfolio = () => {
                   darkMode ? "bg-gray-900" : "bg-white"
                 } flex items-center justify-center`}
               >
-                <Terminal className="w-16 h-16 text-purple-500" />
+                <Origami className="w-16 h-16 text-purple-500" />
               </div>
             </div>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent animate-gradient">
+            <span className="bg-gradient-to-r from-purple-500 via-blue-300 to-cyan-500 bg-clip-text text-transparent animate-gradient">
               Kevin Loun
             </span>
           </h1>
