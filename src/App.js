@@ -161,13 +161,13 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "AI-Powered Analytics Dashboard",
+      title: "GIT Kev - Version Control Simulation",
       description:
-        "Real-time data visualization platform with ML predictions and automated insights generation.",
-      tech: ["React", "Python", "TensorFlow", "D3.js", "PostgreSQL"],
+        "A basic MVP project that was created to learn and understand the inner workings of GIT and version control systems. It includes a simple implementation of commit, branch, and merge functionalities.",
+      tech: ["Java", "Git", "Version Control", "Maven", "JUnit 5"],
       category: "fullstack",
       image: "https://via.placeholder.com/400x300/4338ca/ffffff?text=Analytics",
-      github: "#",
+      github: "https://github.com/KvnLun/GitKev",
       live: "#",
       featured: true,
     },
