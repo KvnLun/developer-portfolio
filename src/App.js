@@ -201,19 +201,19 @@ const Portfolio = () => {
 
   const experience = [
     {
-      title: "Junior Software Engineer",
+      title: "Software Engineer - Loans Servicing BackendSoftware Development Team",
       company: "FirstBank",
       period: "2024 - 2026",
       location: "Denver, CO",
       description:
-        "Develop and maintain critical banking systems using COBOL and Java, supporting both legacy mainframe applications and modern microservices architecture. Ensure seamless integration between core banking systems and digital channels.",
+        "Develop and enhance backend banking systems using Java, Kafka, and Spring Boot contributing to microservices architecture and supporting integration with core banking platforms. Focus on building reliable, scalable services for customer account and transaction processing.",
       achievements: [
-        "Maintained customer and business facing Mainframe Webservices with 95% uptime",
-        "Reduced overnight batch processing time by 30% through JCL and COBOL optimization",
-        "Maintained and improved upon Java webservice APIs reducing latency by 30% and improving data consistency ",
-        "​Implemented unit and integration testing frameworks (JUnit, Mockito, and custom COBOL test scripts), increasing code coverage and reducing post-deployment issues",
-        "​Conducted peer code reviews and enforced best practices across COBOL and Java codebases, reducing production defects by 25%. ",
-        "​Participated in on-call rotations, troubleshooting incidents across COBOL and Java services to minimize production downtime. ",
+        "Delivered new features for account and transaction services, improving processing accuracy and reducing customer-impacting defects",
+        "Optimized RESTful APIs, reducing average response latency by ~25% and improving overall system throughput",
+        "Refactored legacy components into modular Spring Boot microservices, improving maintainability, deployment speed, and scalability",
+        "Implemented unit and integration testing using JUnit and Mockito, increasing code coverage and reducing regression issues",
+        "Collaborated with cross-functional teams (QA, product, DevOps) to deliver features on schedule in an Agile environment",
+        "Participated in production support and on-call rotations, resolving incidents quickly and maintaining high system reliability and uptime",
       ],
     },
   ];
