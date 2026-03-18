@@ -69,6 +69,7 @@ const Portfolio = () => {
         "skills",
         "projects",
         "experience",
+        "education",
         "contact",
       ];
       const scrollPosition = window.scrollY + 100;
@@ -217,6 +218,18 @@ const Portfolio = () => {
       ],
     },
   ];
+   const Education = [
+    {
+      title: "Pomona College",
+      company: "Bachelor of Science in Mathematics & Computer Science",
+      location: "Claremont, CA",
+      description:
+        "Graduated with a dual major in Mathematics and Computer Science, providing a strong foundation in algorithms, data structures, and software development principles. Completed coursework in advanced programming, database systems, and software engineering, while also engaging in projects that applied theoretical concepts to real-world problems.",
+      achievements: [
+        "Key Coursework: Statistical Linear Models, Computational Statistics, Neural Networks, Big Data, Machine Learning",
+      ],
+    },
+  ]
 
   const filteredProjects =
     projectFilter === "all"
@@ -237,6 +250,9 @@ const Portfolio = () => {
       icon: <Award className="w-5 h-5" />,
       label: "Experience",
     },
+      { id: "education", 
+        icon: <Calendar className="w-5 h-5" />, 
+        label: "Education" },
     { id: "contact", icon: <Mail className="w-5 h-5" />, label: "Contact" },
   ];
 
@@ -385,13 +401,17 @@ const Portfolio = () => {
           }}
         >
           <div className="mb-6 inline-block">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 p-1 animate-pulse">
+            <div className="w-64 h-64 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 p-1">
               <div
                 className={`w-full h-full rounded-full ${
-                  darkMode ? "bg-gray-900" : "bg-white"
+                darkMode ? "bg-gray-900" : "bg-white"
                 } flex items-center justify-center`}
               >
-                <Origami className="w-16 h-16 text-purple-500" />
+              <img
+                 src="/pic.jpg"
+                 alt="Profile"
+                 className="w-full h-full rounded-full object-cover"
+              />
               </div>
             </div>
           </div>
@@ -688,6 +708,64 @@ const Portfolio = () => {
 
           <div className="space-y-8">
             {experience.map((exp, i) => (
+              <div
+                key={i}
+                className={`relative pl-8 md:pl-12 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 ${
+                  darkMode ? "before:bg-gray-700" : "before:bg-gray-300"
+                }`}
+              >
+                <div className="absolute left-0 w-4 h-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full -translate-x-1/2" />
+                <div
+                  className={`p-6 rounded-xl ${
+                    darkMode ? "bg-gray-800/50" : "bg-white"
+                  } backdrop-blur-lg border ${
+                    darkMode ? "border-gray-700" : "border-gray-200"
+                  } hover:shadow-xl transition-all duration-300`}
+                >
+                  <div className="flex flex-wrap justify-between items-start mb-4">
+                    <div>
+                      <h3 className="text-xl font-bold mb-1">{exp.title}</h3>
+                      <p className="text-purple-500 font-medium">
+                        {exp.company}
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-sm text-gray-400">{exp.period}</p>
+                      <p className="text-sm text-gray-400 flex items-center justify-end mt-1">
+                        <MapPin className="w-4 h-4 mr-1" />
+                        {exp.location}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-gray-400 mb-4">{exp.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {exp.achievements.map((achievement, j) => (
+                      <span
+                        key={j}
+                        className="flex items-center space-x-1 text-sm"
+                      >
+                        <ArrowRight className="w-4 h-4 text-cyan-500" />
+                        <span>{achievement}</span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Education Section */}
+      <section id="education" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            <span className="bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
+              Education
+            </span>
+          </h2>
+
+          <div className="space-y-8">
+            {Education.map((exp, i) => (
               <div
                 key={i}
                 className={`relative pl-8 md:pl-12 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 ${
