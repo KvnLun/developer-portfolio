@@ -27,7 +27,6 @@ import {
   Download,
   ArrowRight,
   Sparkles,
-  Origami,
 } from "lucide-react";
 
 const Portfolio = () => {
