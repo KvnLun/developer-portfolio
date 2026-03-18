@@ -481,20 +481,17 @@ const Portfolio = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-gray-400">
-                Versatile developer specializing in both legacy mainframe
-                systems and modern Java ecosystems, with hands-on experience
-                supporting critical financial infrastructure. I excel at
-                maintaining COBOL-based core banking applications while
-                developing innovative solutions using Java, Spring Framework,
-                and microservices architecture.
+                Java developer with hands-on experience building and supporting modern backend systems within critical financial
+                infrastructure. Skilled in the Java ecosystem, including Spring Framework and microservices architecture, with 
+                a focus on developing scalable, reliable services. Proven ability to enhance system performance, deliver robust APIs,
+                and contribute to high-quality, production-ready solutions.
               </p>
               <p className="text-lg leading-relaxed text-gray-400">
-                My expertise spans JCL batch processing, VSAM/DB2 database
-                management, and CICS transaction processing, complemented by
-                modern skills in REST API development, containerization, and
-                cloud deployment. I'm passionate about ensuring system
-                reliability, optimizing performance, and facilitating the
-                digital transformation journey for financial institutions.
+                My expertise centers on Java backend development, including Spring Boot microservices, 
+                REST API design, and database management with relational systems. I bring experience with 
+                containerization and cloud-based deployments, focusing on building scalable, resilient services. 
+                I’m passionate about improving system reliability, optimizing performance, and driving modern, 
+                efficient solutions within financial systems.
               </p>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div
@@ -536,11 +533,11 @@ const Portfolio = () => {
                     </div>
                     <div className="flex items-center space-x-4">
                       <Briefcase className="w-5 h-5 text-pink-500" />
-                      <span>Financial Services Specialist</span>
+                      <span>Backend Developer</span>
                     </div>
                     <div className="flex items-center space-x-4">
                       <Award className="w-5 h-5 text-yellow-500" />
-                      <span>Mainframe & Modern Stack</span>
+                      <span>Java & Microservices Architecture</span>
                     </div>
                   </div>
                 </div>
