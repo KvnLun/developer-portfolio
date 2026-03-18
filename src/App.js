@@ -227,6 +227,8 @@ const Portfolio = () => {
         "Graduated with a dual major in Mathematics and Computer Science, providing a strong foundation in algorithms, data structures, and software development principles. Completed coursework in advanced programming, database systems, and software engineering, while also engaging in projects that applied theoretical concepts to real-world problems.",
       achievements: [
         "Key Coursework: Statistical Linear Models, Computational Statistics, Neural Networks, Big Data, Machine Learning",
+        "Senior Thesis: Machine Learning Analysis of Computer Vision Model Applications in Cancer Treatment and Research",
+        "QuestBridge Scholar: Awarded full scholarship to attend Pomona College based on academic achievement and leadership potential",
       ],
     },
   ]
@@ -400,6 +402,7 @@ const Portfolio = () => {
             transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
           }}
         >
+          {/* Profile Picture with Gradient Border */}
           <div className="mb-6 inline-block">
             <div className="w-64 h-64 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 p-1">
               <div
