@@ -46,7 +46,7 @@ const Portfolio = () => {
   const heroRef = useRef(null);
 
   const fullText =
-    "COBOL & Java Developer | WebServices & Microservices Expert";
+    "Java Developer | WebServices & Microservices Expert";
 
   useEffect(() => {
     let i = 0;
@@ -109,13 +109,13 @@ const Portfolio = () => {
 
   const skills = [
     {
-      name: "COBOL",
+      name: "Java",
       icon: <Code2 className="w-8 h-8" />,
       level: 95,
       color: "from-cyan-400 to-blue-500",
     },
     {
-      name: "Java",
+      name: "COBOL",
       icon: <Server className="w-8 h-8" />,
       level: 90,
       color: "from-green-400 to-emerald-500",
@@ -123,11 +123,11 @@ const Portfolio = () => {
     {
       name: "Python",
       icon: <Terminal className="w-8 h-8" />,
-      level: 88,
+      level: 80,
       color: "from-blue-400 to-indigo-500",
     },
     {
-      name: "Z/OS",
+      name: "Kafka",
       icon: <Cpu className="w-8 h-8" />,
       level: 85,
       color: "from-yellow-400 to-orange-500",
@@ -139,7 +139,7 @@ const Portfolio = () => {
       color: "from-purple-400 to-pink-500",
     },
     {
-      name: "JCL",
+      name: "Kotlin",
       icon: <Globe className="w-8 h-8" />,
       level: 80,
       color: "from-orange-400 to-red-500",
@@ -151,9 +151,9 @@ const Portfolio = () => {
       color: "from-pink-400 to-rose-500",
     },
     {
-      name: "R",
+      name: "C++",
       icon: <GitBranch className="w-8 h-8" />,
-      level: 80,
+      level: 70,
       color: "from-gray-400 to-gray-600",
     },
   ];
@@ -860,7 +860,7 @@ const Portfolio = () => {
       >
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2025 Kevin Loun. Built with React & Tailwind CSS.
+            © 2026 Kevin Loun. Built with React & Tailwind CSS.
           </p>
         </div>
       </footer>
